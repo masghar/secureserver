@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66743E57-EFD9-4813-8E6C-B0DFA8BC86DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MySecureServer</RootNamespace>
+    <AssemblyName>MySecureServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2B50FFB294E206AC2172C21302EC187662AEA719</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MySecureServer_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConsoleControl">
+      <HintPath>C:\Users\Administrator\Downloads\ConsoleControlSample\ConsoleControlSample\Console Control Sample\Windows Forms Sample\ConsoleControl.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ProcessInterface">
+      <HintPath>C:\Users\Administrator\Downloads\ConsoleControlSample\ConsoleControlSample\Console Control Sample\Windows Forms Sample\ProcessInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.109.2\lib\net451\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.109.0\lib\net451\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.109.0\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Management.Automation.dll.10.0.10586.0\lib\net40\System.Management.Automation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Connection.cs" />
+    <Compile Include="BLL\ControlMover.cs" />
+    <Compile Include="BLL\Cypher.cs" />
+    <Compile Include="BLL\logs.cs" />
+    <Compile Include="BLL\ScreenCapture.cs" />
+    <Compile Include="BLL\SystemProperties.cs" />
+    <Compile Include="Cypher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cypher.designer.cs">
+      <DependentUpon>Cypher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddConfiguration.Designer.cs">
+      <DependentUpon>frmAddConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSettings.Designer.cs">
+      <DependentUpon>frmAddSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogs.Designer.cs">
+      <DependentUpon>frmLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="italk_theme_-_c#.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShellScriptor\FormPowerShellSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShellScriptor\FormPowerShellSample.designer.cs">
+      <DependentUpon>FormPowerShellSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShellScriptor\PipelineExecutor.cs" />
+    <Compile Include="watermarktext.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Cypher.resx">
+      <DependentUpon>Cypher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddConfiguration.resx">
+      <DependentUpon>frmAddConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSettings.resx">
+      <DependentUpon>frmAddSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogs.resx">
+      <DependentUpon>frmLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShellScriptor\FormPowerShellSample.resx">
+      <DependentUpon>FormPowerShellSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MySecureServer_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_35059814_35v530XQqkaFnc1fRBV2nfO2WvkzBi25 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <Content Include="images\Dakirby309-Simply-Styled-Security-Approved.ico" />
+    <None Include="Resources\search-icon.png" />
+    <None Include="Resources\System-settings-icon.png" />
+    <None Include="Resources\MetroUI-Folder-OS-Security-Denied-icon.png" />
+    <None Include="Resources\MetroUI-Folder-OS-Security-Denied-icon %281%29.png" />
+    <None Include="Resources\Groups-icon.png" />
+    <None Include="Resources\faq-migration.png" />
+    <None Include="Resources\fo22oter_gradient.png" />
+    <None Include="Resources\footer_gradient.png" />
+    <None Include="Resources\accountlogin-icon.png" />
+    <None Include="Resources\connect-icon.png" />
+    <None Include="Resources\app-settings-icon.png" />
+    <None Include="Resources\Apps-system-software-update-icon %281%291.png" />
+    <None Include="Resources\Apps-system-software-update-icon %281%29.png" />
+    <None Include="Resources\App-service-manager-icon.png" />
+    <None Include="Resources\adapters.png" />
+    <None Include="Resources\Word-icon.png" />
+    <None Include="Resources\systempro.png" />
+    <None Include="Resources\Sound-on-icon.png" />
+    <None Include="Resources\sleep-mode-prolonged-icon.png" />
+    <None Include="Resources\Sign-LogOff-icon.png" />
+    <None Include="Resources\shutdown-icon.png" />
+    <None Include="Resources\proxy.png" />
+    <None Include="Resources\PadLock-icon.png" />
+    <None Include="Resources\Outlook-icon.png" />
+    <None Include="Resources\notepad-icon.png" />
+    <None Include="Resources\logout-icon.png" />
+    <None Include="Resources\fire.png" />
+    <None Include="Resources\Excel-icon.png" />
+    <None Include="Resources\Devices-yast-HD-icon.png" />
+    <None Include="Resources\Devices-drive-removable-media-usb-pendrive-icon.png" />
+    <None Include="Resources\data-info-icon.png" />
+    <None Include="Resources\control.png" />
+    <None Include="Resources\Computer-icon1.png" />
+    <None Include="Resources\Computer-icon.png" />
+    <None Include="Resources\Apps-Task-Manager-alt-1-Metro-icon.png" />
+    <None Include="Resources\Apps-system-software-update-icon1.png" />
+    <None Include="Resources\Apps-system-software-update-icon.png" />
+    <None Include="Resources\System-Security-2-icon1.png" />
+    <None Include="Resources\GettyImages-622184706.jpg" />
+    <None Include="Resources\cyber-security-background-vector-229531001.jpg" />
+    <None Include="Resources\cyber-security.png" />
+    <None Include="Resources\aa2.png" />
+    <None Include="Resources\240_F_35059814_35v530XQqkaFnc1fRBV2nfO2WvkzBi25.jpg" />
+    <None Include="Resources\240_F_35059814_35v530XQqkaFnc1fRBV2nfO2WvkzBi25 %281%291.jpg" />
+    <None Include="Resources\0fce3076-0400-47bd-b670-b19bc4a26b69.jpg" />
+    <None Include="Resources\cyber-security-background-vector-22953100.jpg" />
+    <None Include="Resources\System-Security-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.109.2\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
